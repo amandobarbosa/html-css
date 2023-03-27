@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS   
+        : = pseudo-class
+        :: = pseudo-element
+        > = clildren
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: rgb(112, 0, 0);
+        }
+        a:hover{
+            color: royalblue;
+            text-decoration: underline;
+        }
+        li:hover{
+            color: royalblue;
+        }
+        a:active{
+            color: seagreen;
+        }
+        .especial{
+            background-color: rgb(255, 81, 0);
+        }
+        .especial::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="http://www.superanimes.site/" target="_blank">super animes</a></li>
+        <li><a href="https://animesvision.biz/animes/kumo-desu-ga-nani-ka-dublado" target="_blank">kumo desu</a></li>
+        <li><a href="https://animesvision.biz/" target="_blank" class="especial">animes vision</a></li>
+    </ul>
+</body>
+</html>

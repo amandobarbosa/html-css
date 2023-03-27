@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body{
+    font-family: 'work suns', Arial, Helvetica, sans-serif;
+    /*medidas absolutas
+    cm, mm, in, px, pt, pc
+
+    medidas relativas
+    em, ex, rem, vw, vh, %
+    recomendado usar px e em
+    16px geralmente = 1em*/
+    font-size: 16px;
+    font-weight: lighter;
+    font-style: italic;
+    text-decoration: underline;
+}
+h1{
+    /*shorthand
+    ordem - font-style: font-weight: font-size: font-family:
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;*/
+    font: italic lighter 20px arial, sans-serif;
+}
+h2{
+    font: bold 3em serif;
+}

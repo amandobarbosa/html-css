@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinamica</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em diferentes dispositivos e veja o tamanho da imagem mudando</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="imagem flexivel">
+    </picture>
+    <br>
+<audio preload="auto" autoplay controls>
+    <source src="midia/Drip da Roca(MP3_128K).mp3" type="audio/mpeg">
+    <source src="midia/Drip da Roca(MP3_128K).wav" type="audio/wav">
+    <p>infelizmente seu navegador não consgue reproduzir audio <a href="www.youtube.com/dripdaroca">clique aqui</a> para baixar o audio</p>
+</audio><!--mp3, wav, ogg-->
+</body>
+</html>

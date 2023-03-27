@@ -1,0 +1,31 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: white;
+	padding: 10px;
+}
+
+p{
+	font-size: 20px;
+	font-weight: 300;
+	color: rgb(100,149,237);
+	font-family: 'Srisakdi', cursive;
+}
+
+.background {
+	background-image: url("../image/background_div.jpg"); ;
+	width: 600px;
+	height: 400px;
+}
+
+.div_imagem img{
+	width: 500px;
+	position: relative;
+	left: 250px;
+	top: -250px;
+}
+
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+</head>
+<body>
+    <h1>trabalhando com formularios</h1>
+    <form name="cadastro" action="processo.php" method="POST" accept-charset="UTF-8">
+        nome: <input type="nome" name="nome" size="30" placeholder="digite seu nome aqui">
+        <br>
+        sobrenome: <input type="text" name="sobrenome">
+        <br>
+        endereço: <input type="text" name="endereço" size="60">
+        senha: <input type="password" name="senha" maxlength="16" required>
+        <input type="submit" value="enviar">
+        <div><button>enviar dados</button></div>
+    </form>
+</body>
+</html>

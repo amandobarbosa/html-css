@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*em html é id = em css é #
+em html é class = em css é .
+em um documento html só pode ter 1 id
+*/
+
+body {
+    background-color: rgb(156, 233, 40);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: antiquewhite;
+}
+
+h1#principal{
+    text-align: center;
+}
+
+h2{
+    color: brown;
+}
+
+.basico{
+    color: beige;
+    font-weight: bolder;
+}
+
+.intermediario{
+    color: red;
+}
+
+.avancado{
+    color: indigo;
+}
+
+.destaque{
+    background-color: chocolate;
+}

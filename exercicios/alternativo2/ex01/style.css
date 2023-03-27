@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+}
+h2{
+    color: #2e2e2e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+p{
+    color: #5a5858;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    text-align: justify;
+}
+header{
+    width: 100%;
+    height: 200px;
+    background-color: #f9f9f9;
+}
+.midiassociais{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    line-height: 200px;
+    float: left;
+}
+.midiassociais img{
+    width: 32px;
+    height: 32px;
+}
+.midiassociais ul{
+    list-style: none;
+}
+.midiassociais ul li{
+    float: left;
+    margin-left: 10px;
+}
+.youtube{
+    border-radius: 5px;
+}
+.logo{
+    width: 163px;
+    height: 200px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.logo img{
+    width: 163px;
+}
+.telefone{
+    width: 145px;
+    height: 200px;
+    float: right;
+    position: relative;
+    line-height: 200px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    right: 10px;
+    color: #85599e;
+}
+.telefone img{
+    width: 20px;
+    height: 20px;
+}
+.telefone ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.telefone ul li{
+    float: left;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #135d9c;
+    line-height: 60px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav ul li{
+    float: left;
+    margin-left: 20px;
+}
+nav a{
+    color: white;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: white !important;
+}
+.titulo_pagina{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.img_inicio{
+    width: 100%;
+    position: relative;
+    top: -200px;
+    filter: brightness(20%);
+}
+.h1_tit{
+    position: relative;
+    z-index: 999;
+    color: white;
+    text-align: center;
+    top: 100px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 45px;
+}
+.conteudo{
+    padding: 10px;
+    text-align: center;
+}
+.conteudo a{
+    color: black;
+    text-decoration: none;
+}
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #3a3a3a;
+}
+.div_footer{
+ width: 250px;
+ height: 250px;
+ float: left;    
+ margin-left: 50px;
+}
+.div_footer ul{
+    list-style: none;
+}
+.div_footer ul li{
+    margin-top: 10px;
+    float: inline-end;
+}
+.div_footer a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.div_footer img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.titulo_footer{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.subtitulo_footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+}
+.copyright{
+    width: 100%;
+    height: 50px;
+    background-color: #3a3a3a;
+    line-height: 50px;
+}
+.copyright span{
+    color: grey;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+.menu_mobile{
+    display: none;
+}
+@media (max-width: 320px){
+    .midiassociais{
+        display: none;
+    }
+    .telefone{
+        display: none;
+    }
+    .menu_classico{
+        display: none;
+    }
+    .menu_mobile{
+        display: block;
+    }
+    .menu_mobile_interno ul{
+        list-style: none;
+    }
+    .menu_mobile_interno ul li{
+        margin-top: 5px;
+    }
+    .menu_mobile_interno a{
+    color: white;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+
+}
