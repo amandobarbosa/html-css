@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 5px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .destaque{
+            background-color: greenyellow;
+        }
+        .cgrupo{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>exercicio de tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="destaque">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th  scope="col">Home</th>
+            <th  scope="col">Sexo</th>
+            <th  scope="col">Idade</th>
+            <th  scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>claudio</td>
+            <td>m</td>
+            <td>26</td>
+            <td>programador</td>
+        </tr>
+
+        <tr>
+            <td>gustavo</td>
+            <td>m</td>
+            <td>42</td>
+            <td>professor</td>
+        </tr>
+
+        <tr>
+            <td>helio</td>
+            <td>m</td>
+            <td>68</td>
+            <td>vendedor</td>
+        </tr>
+
+        <tr>
+            <td>maria</td>
+            <td>f</td>
+            <td>80</td>
+            <td>medica</td>
+        </tr>
+
+        <tr>
+            <td>claudio</td>
+            <td>m</td>
+            <td>22</td>
+            <td>nutricionista</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
