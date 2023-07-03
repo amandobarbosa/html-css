@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 20px;
+            background-color: gray;
+        }
+        #ativar{
+            display: block;
+            margin: 20px auto;
+        }
+        #modal{
+            padding: 30px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0px 1px 1px black;
+            max-width: 400px;
+            margin: 20px auto; 
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+        #modal h1{
+            margin: 0px 0px 20px;
+        }
+        #modal label{
+            display: block;
+            margin: 10px;
+        }
+        #modal input{
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: .5rem;
+            font-size: 1rem;
+            background: gray;
+        }
+        #modal button{
+            margin: 10px;
+            display: block;
+            padding: .5rem 2rem;
+            border: none;
+            background-color: orange;
+            border-radius: 4px;
+        }
+        #modal.animar{
+            animation-name: slide;
+            animation-duration: .3s;
+            animation-fill-mode: forwards;
+            /*por padrão já vem assim*/
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-play-state: running;
+            animation-iteration-count: 1;
+            /*animation: slide .3s forwards;*/
+        }
+        #load{
+            width: 20px;
+            height: 20px;
+            border: 10px solid;
+            color: yellow;
+            border-radius: 50%;
+            border-top-color: transparent;
+            margin: 0 auto;
+            animation: load .4s linear infinite /*alternate-reverse*/;
+        }
+        @keyframes slide {
+            from{
+                opacity: 0;
+            }
+            to{
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+        @keyframes load {
+            to{
+                transform: rotate(360deg) /*scale(2)*/;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button id="ativar">Ativar</button>
+    <div id="modal" class="animar">
+        <h1>login</h1>
+        <label for="inome">nome</label>
+        <input type="text" name="nome" id="inome">
+        <label for="iemail">email</label>
+        <input type="email" name="email" id="iemail">
+        <button>Logar</button>
+    </div>
+
+    <div id="load"></div>
+
+    <script>
+        ativar.addEventListener('click', () =>{
+            modal.classList.toggle('animar')
+        });
+    </script>
+</body>
+</html>
